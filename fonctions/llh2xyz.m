@@ -1,10 +1,10 @@
-function [x,y,z] = llh2xyz(l,l,h)
+function [xyz] = llh2xyz(llh)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Ce programme transforme un triplet de coordonn�es ellipsoidales
 % (latitude, longitude, altitude) en coordonn�es cart�siennes dans la
 % rep�re WGS84.
-% Entr�e :
+% Entr�e : LES PASSER EN RADIANS (44°48' = 44 + 48/60 ('=minute d'arc))
 %  llh = (latit, longi, alti), triplet de coordonn�es ellipsoidales
 % Sortie :
 % xyz : triplet de coordonn�es cart�siennes
